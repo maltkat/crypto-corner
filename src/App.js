@@ -8,18 +8,7 @@ export default function App() {
   return (
     <Router>
       <Container>
-        <Nav>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Coins</Link>
-              </li>
-              <li>
-                <Link to="/portfolio">Portfolio</Link>
-              </li>
-            </ul>
-          </nav>
-        </Nav>
+        <Nav/>
 
         <Switch>
           <Route exact path="/portfolio" component={Portfolio}>
@@ -27,8 +16,7 @@ export default function App() {
           <Route exact path="/" component={Home}>
           </Route>
         </Switch>
-
-        <BottomChart/>
+        
       </Container>
     </Router>
   );
